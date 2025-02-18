@@ -3,48 +3,120 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  html {
-      font-family: Arial, Helvetica, sans-serif;
-  }
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
   
-  #main {
+#main {
   
-  }
+}  
+  /* Start-Header */
+#header {
+    z-index: 1;
+    height: 46.5px;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav, .subnav {
+    list-style-type: none;
+}
+
+#nav .ti-down-btn {
+    font-size: 16px;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav li a {
+    display: block;
+    text-decoration: none;
+    line-height: 46.5px;
+    padding: 0 24px;
   
-  /* End-Header */
-  #header {
-      height: 46.5px;
-      background-color: #000;
-  }
+}
+#nav .subnav li:hover a,
+#nav > li:hover > a {
+    background-color: #ccc;
+    color: #000;
+} 
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 46.5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
   
-  #header #nav .nav-sub {
-      display: inline-block;
-  }
-  
-  #header #nav .nav-sub a {
-      color: #fff;
-      display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-      line-height: 46.5px;
-      padding: 0 24px;
-  
-  }
-  #header #nav .nav-sub:hover a {
-      background-color: #ccc;
-      color: #000;
-  }
-  
-  #header #nav .nav-sub .nav-special-sub {
-      display: none;
-  }
-  
-  /* End-Header */
-  #slider {
-      min-height: 500px;
-      background-color: #333;
-  }
+#nav .subnav a {
+    color: #000;
+    padding: 0 16px;
+    line-height: 38px;
+}
+
+.search-btn {
+    float: right;
+    padding: 14px 23px 14px 23px;
+}
+.search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+.ti-search-btn {
+    color: #fff;
+}
+
+
+/* End-Header */
+
+/* Start-Slider*/
+#slider {
+    margin-top: 46.5px;
+    position: relative;
+}
+#slider .text-heading {
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+    bottom: 90px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+#slider .text-description {
+    position: absolute;
+    color: #fff;
+    font-size: 15px;
+    bottom: 50px;
+    text-align: center;
+    right: 0;
+    left: 0;
+}
+/* End-Slider */
   content
   footer
