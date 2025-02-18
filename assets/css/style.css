@@ -1,0 +1,50 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #main {
+  
+  }
+  
+  /* End-Header */
+  #header {
+      height: 46.5px;
+      background-color: #000;
+  }
+  
+  #header #nav .nav-sub {
+      display: inline-block;
+  }
+  
+  #header #nav .nav-sub a {
+      color: #fff;
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      line-height: 46.5px;
+      padding: 0 24px;
+  
+  }
+  #header #nav .nav-sub:hover a {
+      background-color: #ccc;
+      color: #000;
+  }
+  
+  #header #nav .nav-sub .nav-special-sub {
+      display: none;
+  }
+  
+  /* End-Header */
+  #slider {
+      min-height: 500px;
+      background-color: #333;
+  }
+  content
+  footer
