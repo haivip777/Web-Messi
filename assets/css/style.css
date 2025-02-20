@@ -118,5 +118,46 @@ html {
     left: 0;
 }
 /* End-Slider */
-  content
-  footer
+  
+/* Start-Content */
+#content {
+
+}
+
+#content .content-section {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+#content .content-section h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 45px;
+    letter-spacing: 4px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#content .content-section .section-sub-heading {
+    font-size: 15px;
+    line-height: 22.5px;
+    margin: 15px 0;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .content-section .about-text {
+    margin: 15px 0;
+    text-align: justify;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+}
+
+/* End-Content */
+#footer {
+
+}
