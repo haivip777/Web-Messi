@@ -64,6 +64,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    overflow: hidden;
 }
 
 #nav, .subnav {
@@ -121,15 +122,24 @@ html {
     line-height: 38px;
 }
 
+.mobile-menu-btn, 
 .search-btn {
     float: right;
     padding: 14px 23px 14px 23px;
 }
+.mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+.mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
+
 .search-btn:hover {
     background-color: #f44336;
     cursor: pointer;
 }
-.ti-search-btn {
+.menu-icon,
+.search-icon {
     color: #fff;
 }
 
@@ -169,6 +179,7 @@ html {
 
 #content .content-section {
     width: 800px;
+    max-width: 100%; /*Nếu cửa sổ trình duyệt >= 800px, thì content-section giữ nguyên kích thước 800px, còn nếu < 800px thì nó tự = 100% trình duyệt*/
     margin-left: auto;
     margin-right: auto;
     padding: 64px 16px;

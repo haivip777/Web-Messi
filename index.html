@@ -6,7 +6,9 @@
   <title>The Band</title>
   <link rel="icon" href="./assets/img/png-clipart-batman-logo-dc-comics-batman-comics-leaf.png" type="image/x-icon" />
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css"> <!-- responsive css đặt ở dưới thì mới có tác dụng -->
   <link rel="stylesheet" href="./assets/fonts/themify-icons-font (1)/themify-icons/themify-icons.css">
+
 </head>
 <body>
     <div id="main">
@@ -32,7 +34,10 @@
             <!-- End: Nav -->
             <!-- Start: Search Button -->
             <div class="search-btn">
-                <i class="ti-search-btn ti-search"></i>
+                <i class="search-icon ti-search"></i>
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
             </div>
             <!-- End: Search Button -->
         </div>
@@ -157,5 +162,29 @@
             <p class="copyright">Powered by <a href="">w3.css</a></p>
         </div>
     </div>
+  <script>
+      var header = document.getElementById("header");
+      var mobileMenu = document.getElementById("mobile-menu");
+      var headerHeight = header.clientHeight;
+      
+      // Đóng/mở mobile menu
+      mobileMenu.onclick = function(){
+          var isClosed = header.clientHeight === headerHeight;
+          if(isClosed){
+              header.style.height = "auto";
+          }else{
+              header.style.height = null;
+          }
+        }
+       
+        // Tự đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for(var i = 0; i < menuItems.length; i++){
+            var menuItem = menuItems[i];
+            menuItem.onclick = function(event){
+                header.style.height = null;
+            }
+        }
+  </script>
 </body>
 </html>

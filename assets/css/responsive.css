@@ -1,0 +1,15 @@
+/* Mobile */
+@media (max-width: 767px) {
+    #nav > li {
+        display: block;
+    }
+
+    .search-btn {
+        display: none;
+    }
+
+    #slider .text-heading,
+    #slider .text-description {
+        display: none;
+    }
+}
