@@ -122,6 +122,9 @@ html {
     line-height: 38px;
 }
 
+.mobile-menu-btn {
+    display: none;
+}
 .mobile-menu-btn, 
 .search-btn {
     float: right;

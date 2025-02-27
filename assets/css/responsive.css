@@ -4,6 +4,21 @@
         display: block;
     }
 
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav {
+        display: block;
+    }
+
+    .mobile-menu-btn {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+    }
+
     .search-btn {
         display: none;
     }
