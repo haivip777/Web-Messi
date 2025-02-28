@@ -181,8 +181,15 @@
         var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
         for(var i = 0; i < menuItems.length; i++){
             var menuItem = menuItems[i];
+            var parentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnav');
+
+            // if(!parentMenu){
+            //     menuItem.onclick = function(event){
+            //         header.style.height = null;
+            //     }
+            // }
             menuItem.onclick = function(event){
-                header.style.height = null;
+            header.style.height = null;
             }
         }
   </script>
